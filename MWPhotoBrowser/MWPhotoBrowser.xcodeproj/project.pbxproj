@@ -427,6 +427,41 @@
 			};
 			name = Release;
 		};
+		F536C0131651240C006DC6E9 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		F536C0141651240C006DC6E9 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MWPhotoBrowser.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MWPhotoBrowser-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Beta;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +470,7 @@
 			buildConfigurations = (
 				4C6F96CF14AF704100F8389A /* Debug */,
 				4C6F96D014AF704100F8389A /* Release */,
+				F536C0131651240C006DC6E9 /* Beta */,
 				4C4FB12A14AF8A78000A5F46 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -445,6 +481,7 @@
 			buildConfigurations = (
 				4C6F96D214AF704100F8389A /* Debug */,
 				4C6F96D314AF704100F8389A /* Release */,
+				F536C0141651240C006DC6E9 /* Beta */,
 				4C4FB12B14AF8A78000A5F46 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
